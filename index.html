@@ -91,5 +91,17 @@
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <!-- JavaScript für Formularverarbeitung -->
     <script src="https://monshinedeveloper.github.io/assets/script/form.js"></script>
+    <script>
+    document.getElementById("applicationForm").addEventListener("submit", function(event){
+        event.preventDefault(); // Prevent the default form submission
+        // Here you can perform any additional actions before submitting the form, such as validation
+        
+        // Assuming the form submission is successful, display a success message
+        alert("Submission successful!");
+        
+        // Optionally, you can reset the form after successful submission
+        document.getElementById("applicationForm").reset();
+    });
+</script>
 </body>
 </html>
